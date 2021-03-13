@@ -2,18 +2,62 @@
   text-align: center;
 }
 
-.white-dropdown{
+#add-round-button{
+  width: ;
+}
 
+.result-card-title{
+  color: darkslategrey;
+}
+
+.result-card{
+  width: 18rem;
+}
+
+.card-body{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .fixed-width{
   min-width: 260px;
+  max-width: 260px;
 }
+
+#title{
+  padding-left: 0px;
+  position: relative;
+  left: 0px;
+  display: inline;
+}
+
+#logo{
+  max-width:40px;
+  max-height: 40px;
+  padding-right: 4px;
+  padding-top: 10px;
+}
+
+.page-width{
+  max-width: 400px;
+}
+
+hr { background-color: grey; height: 1px; border: 0; }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.tournament-submit-button{
+  margin-top: 20px;
+  width: 305px;
+  margin-bottom: 20px;
+}
+
+.main-content-width{
+  width: 305px;
 }
 
 .results{
