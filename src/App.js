@@ -1,11 +1,16 @@
 // -- Bootstrap
 import logo from './planeswalker_icon.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Popper from 'popper.js'
 import 'bootstrap/dist/js/bootstrap.js';
 
 // -- Components
 import RoundsTable from './RoundsTable'
+
+// -- Decks
+import decks from './decks';
+
+// -- Config
+import config from './config';
 
 // -- Fontawesome
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -27,7 +32,7 @@ library.add(fab, faEdit, faTrashAlt, faPlusSquare)
 
 
 function App() {
-  const [rounds, setRounds] = useState(0);
+  const [rounds] = useState([]);
   return (
     <div className="container-fluid px-0 App">
       <div className="row">
@@ -41,10 +46,10 @@ function App() {
           </header>
           <main className="App-main">
             <div className="tournament-info">
-              <TournamentInfoCard rounds = {rounds} />
+              <TournamentInfoCard rounds = {rounds} opponentDecks = {decks} />
             </div>
             <div className="results">
-              <RoundsTable />
+              <RoundsTable rounds = {rounds} opponentDecks = {decks}/>
             </div>
             <button className="btn btn-light tournament-submit-button">Submit Tournament</button>
           </main>

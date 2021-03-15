@@ -1,4 +1,3 @@
-import { ReactComponent } from 'react';
 import React from 'react';
 
 export default class TournamentInfoCard extends React.Component {
