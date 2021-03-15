@@ -1,4 +1,4 @@
-const match_states =[
+const matchStates =[
     {
         "_id": "STATE_0",
         "name": "Win"
@@ -17,7 +17,7 @@ const RULE_LEVEL_REGULAR = 0;
 const RULE_LEVEL_COMPETITIVE = 1;
 const RULE_LEVEL_PROFESSIONAL = 2;
 
-const rules_enforcement_levels = [
+const rulesEnforcementLevels = [
     {
         "_id": "RULE_LEVEL_REGULAR",
         name: "Regular"
@@ -32,76 +32,76 @@ const rules_enforcement_levels = [
     }
 ]
 
-const event_types = [
+const eventTypes = [
     {
         "_id": "EVENT_0",
         "name": "Eternal Weekend",
-        "rules_level": rules_enforcement_levels[RULE_LEVEL_COMPETITIVE]
+        "rules_level": rulesEnforcementLevels[RULE_LEVEL_COMPETITIVE]
     },
     {
         "_id": "EVENT_1",
         "name": "Friday Night Magic",
-        "rules_level": rules_enforcement_levels[RULE_LEVEL_REGULAR]
+        "rules_level": rulesEnforcementLevels[RULE_LEVEL_REGULAR]
     },
     {
         "_id": "EVENT_2",
         "name": "Grand Prix Day 1",
-        "rules_level": rules_enforcement_levels[RULE_LEVEL_COMPETITIVE]
+        "rules_level": rulesEnforcementLevels[RULE_LEVEL_COMPETITIVE]
     },
     {
         "_id": "EVENT_3",
         "name": "Grand Prix Day 2",
-        "rules_level": rules_enforcement_levels[RULE_LEVEL_COMPETITIVE]
+        "rules_level": rulesEnforcementLevels[RULE_LEVEL_COMPETITIVE]
     },
     {
         "_id": "EVENT_4",
         "name": "Grand Prix Trials",
-        "rules_level": rules_enforcement_levels[RULE_LEVEL_COMPETITIVE]
+        "rules_level": rulesEnforcementLevels[RULE_LEVEL_COMPETITIVE]
     },
     {
         "_id": "EVENT_5",
         "name": "Draft Weekend",
-        "rules_level": rules_enforcement_levels[RULE_LEVEL_REGULAR]
+        "rules_level": rulesEnforcementLevels[RULE_LEVEL_REGULAR]
     },
     {
         "_id": "EVENT_6",
         "name": "Prerelease",
-        "rules_level": rules_enforcement_levels[RULE_LEVEL_REGULAR]
+        "rules_level": rulesEnforcementLevels[RULE_LEVEL_REGULAR]
     },
     {
         "_id": "EVENT_7",
         "name": "Players Tour",
-        "rules_level": rules_enforcement_levels[RULE_LEVEL_PROFESSIONAL]
+        "rules_level": rulesEnforcementLevels[RULE_LEVEL_PROFESSIONAL]
     },
     {
         "_id": "EVENT_8",
         "name": "Players Tour Finals",
-        "rules_level": rules_enforcement_levels[RULE_LEVEL_PROFESSIONAL]
+        "rules_level": rulesEnforcementLevels[RULE_LEVEL_PROFESSIONAL]
     },
     {
         "_id": "EVENT_9",
         "name": "Players Tour Qualifiers",
-        "rules_level": rules_enforcement_levels[RULE_LEVEL_COMPETITIVE]
+        "rules_level": rulesEnforcementLevels[RULE_LEVEL_COMPETITIVE]
     },
     {
         "_id": "EVENT_10",
         "name": "Magic Premier Series",
-        "rules_level": rules_enforcement_levels[RULE_LEVEL_COMPETITIVE]
+        "rules_level": rulesEnforcementLevels[RULE_LEVEL_COMPETITIVE]
     },
     {
         "_id": "EVENT_11",
         "name": "WPN Qualifiers",
-        "rules_level": rules_enforcement_levels[RULE_LEVEL_COMPETITIVE]
+        "rules_level": rulesEnforcementLevels[RULE_LEVEL_COMPETITIVE]
     },
     {
         "_id": "EVENT_12",
         "name": "WPN Preliminary Events",
-        "rules_level": rules_enforcement_levels[RULE_LEVEL_COMPETITIVE]
+        "rules_level": rulesEnforcementLevels[RULE_LEVEL_COMPETITIVE]
     },
     {
         "_id": "EVENT_13",
         "name": "World Championship",
-        "rules_level": rules_enforcement_levels[RULE_LEVEL_PROFESSIONAL]
+        "rules_level": rulesEnforcementLevels[RULE_LEVEL_PROFESSIONAL]
     },
 ]
 
@@ -109,7 +109,7 @@ const FORMAT_TYPE_CONSTRUCTED = 0;
 const FORMAT_TYPE_LIMITED = 1;
 const FORMAT_TYPE_SANCTIONED_MULTIPLAYER = 2;
 
-const official_formats = [
+const officialFormats = [
     {
         id: "FORMAT_"+FORMAT_TYPE_CONSTRUCTED,
         type: "Constructed",
@@ -141,7 +141,7 @@ const official_formats = [
     }
 ];
 
-const casual_formats = [
+const casualFormats = [
     {
         type: "Casual Constructed",
         formats: [
@@ -186,11 +186,11 @@ const casual_formats = [
     }
 ]
 const config = {
-    "match_states": match_states,
-    "event_types": event_types,
-    "rules_enforcement_levels": rules_enforcement_levels,
-    "official_formats": official_formats,
-    "casual_formats": casual_formats
+    matchStates: matchStates,
+    eventTypes: eventTypes,
+    rulesEnforcementLevels: rulesEnforcementLevels,
+    officialFormats: officialFormats,
+    casualFormats: casualFormats
 }
 
 export default config;

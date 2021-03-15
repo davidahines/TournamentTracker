@@ -10,6 +10,14 @@
   color: darkslategrey;
 }
 
+.result-Win-color{
+  color: green;
+}
+
+.result-Loss-color{
+  color: red;
+}
+
 .result-card{
   width: 18rem;
 }
@@ -42,7 +50,11 @@
   max-width: 400px;
 }
 
-hr { background-color: grey; height: 1px; border: 0; }
+.main-hr { background-color: grey; height: 1px; border: 0; }
+.card>hr {
+  margin: 0 auto;
+  width: 250px;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

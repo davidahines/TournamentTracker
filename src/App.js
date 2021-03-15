@@ -20,7 +20,7 @@ import { faPlusSquare } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 // -- React
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 // -- Styles
 import './App.css';
@@ -42,14 +42,14 @@ function App() {
               <img id="logo" className="float-left" src={logo} alt="Planeswalker Logo" />
               <h1 id="title">Mtg Tracker</h1>
             </div>
-            <hr className="w-100 page-width" />
+            <hr className="w-100 page-width main-hr" />
           </header>
           <main className="App-main">
             <div className="tournament-info">
-              <TournamentInfoCard rounds = {rounds} opponentDecks = {decks} />
+              <TournamentInfoCard rounds={rounds} playerDecks={decks} config={config} />
             </div>
             <div className="results">
-              <RoundsTable rounds = {rounds} opponentDecks = {decks}/>
+              <RoundsTable rounds={rounds} opponentDecks={decks} config={config} />
             </div>
             <button className="btn btn-light tournament-submit-button">Submit Tournament</button>
           </main>
